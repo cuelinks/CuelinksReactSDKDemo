@@ -36,8 +36,7 @@ function App(): JSX.Element {
   };
   const handleLinkClick = async (url) => {
      const modifiedLink = await CueLinkModule.getAffiliateLink(url);
-     setValueFromNativeModule(modifiedLink)
-//      Linking.openURL(modifiedLink);
+     Linking.openURL(modifiedLink);
 
     };
 
@@ -45,10 +44,6 @@ function App(): JSX.Element {
         <View style={styles.centered}>
         <TouchableOpacity onPress={() => handleLinkClick('https://example.com')}>
                 <Text style={styles.sectionTitle}>Click Here To Generate Test Link!</Text>
-                <Text/>
-                <Text style={styles.highlight}>Generated Link  :</Text>
-
-                <Text >{valueFromNativeModule}</Text>
         </TouchableOpacity>
         </View>
   );

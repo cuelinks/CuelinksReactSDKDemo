@@ -21,6 +21,6 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
-        <meta-data android:name="com.cuelinks.channelId" android:value="189829"/>
+        <meta-data android:name="com.cuelinks.channelId" android:value="1234566"/>
     </application>
 </manifest>
